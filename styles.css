@@ -177,3 +177,47 @@ footer a {
 #step5 {
   background: #8b3d3a; /* Darkest, earthy tone */
 }
+
+.navbar {
+  background-color: #221e1f; /* Background matches the dark theme */
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar a {
+  color: #d9d4b7; /* Text color matches the light theme */
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #d57f76; /* Highlight color on hover */
+  color: #221e1f; /* Dark text on hover for contrast */
+}
+
+.navbar a.active {
+  background-color: #d57f76; /* Highlight active link */
+  color: #221e1f; /* Dark text for active link */
+}
+
+/* Make the navbar sticky on scroll */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
