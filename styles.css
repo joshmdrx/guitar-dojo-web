@@ -221,3 +221,23 @@ footer a {
   top: 0;
   z-index: 1000;
 }
+.download-buttons {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.download-button {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.download-button img {
+  width: 180px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.download-button img:hover {
+  transform: scale(1.05);
+}
