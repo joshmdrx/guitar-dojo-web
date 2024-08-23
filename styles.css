@@ -1,0 +1,179 @@
+body {
+  background-color: #221e1f;
+  color: #d9d4b7;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.three-d {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  perspective: 1px; /* This creates a strong 3D effect */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  transform: translateZ(0px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  animation: fadeIn 5s ease-in-out;
+}
+
+.header {
+  text-align: center;
+  width: 100%;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative; /* Ensure it scrolls out */
+  z-index: 10;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  color: #f0f0f0;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-top: 20px;
+  color: #d7a996;
+}
+
+.hero .cta-button {
+  margin-top: 30px;
+  background-color: #d57f76;
+  color: #221e1f;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+
+.feature {
+  text-align: center;
+  max-width: 300px;
+}
+
+.feature i {
+  color: #d57f76;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  color: #f0f0f0;
+  font-size: 1.5em;
+}
+
+.feature p {
+  color: #d7a996;
+  font-size: 1em;
+}
+
+.trial {
+  text-align: center;
+  margin: 50px 20px;
+  padding: 30px;
+  background-color: #d57f76;
+  border-radius: 10px;
+}
+
+.trial h2 {
+  color: #221e1f;
+  font-size: 2em;
+}
+
+.trial p {
+  color: #221e1f;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.trial .cta-button {
+  margin-top: 20px;
+  background-color: #221e1f;
+  color: #d9d4b7;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+footer {
+  background-color: #333;
+  padding: 20px 0;
+  text-align: center;
+  color: #f0f0f0;
+}
+
+footer a {
+  color: #bbd5ed;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+#steps {
+  transform-style: preserve-3d; /* Allows children to exist in 3D space */
+}
+
+.step {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: white;
+  transform: translateZ(-1px) scale(0.8); /* Start farther and scaled down */
+  transition: transform 0.5s; /* Smooth transition for transform */
+}
+
+#step1 {
+  background: #f4cccc; /* Lightest shade */
+}
+
+#step2 {
+  background: #eaa6a0; /* Light pinkish shade */
+}
+
+#step3 {
+  background: #d57f76; /* Primary color */
+}
+
+#step4 {
+  background: #b75c58; /* Darker, more muted */
+}
+
+#step5 {
+  background: #8b3d3a; /* Darkest, earthy tone */
+}
