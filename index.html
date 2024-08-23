@@ -37,58 +37,24 @@
         <section class="step" id="step3"></section>
         <section class="step" id="step4"></section>
         <section class="step" id="step5"></section>
-        <!-- <section class="step" id="step1"></section>
-        <section class="step" id="step2"></section>
-        <section class="step" id="step3"></section>
-        <section class="step" id="step4"></section>
-        <section class="step" id="step5"></section> -->
       </div>
     </div>
-    <div class="container">
-      <div class="hero">
-        <h1>Master Guitar Technique with Discipline</h1>
-        <p>
-          Transform your guitar practice with structured routines inspired by
-          martial arts.
-        </p>
-        <a href="#" class="cta-button">Download Now</a>
-      </div>
 
-      <div class="features">
-        <div class="feature">
-          <i class="fas fa-guitar fa-3x"></i>
-          <!-- Guitar Icon -->
-          <h3>Play Anything</h3>
-          <p>
-            Guitar Dojo doesn’t teach you to play something, it shows you how to
-            play anything.
-          </p>
-        </div>
-        <div class="feature">
-          <i class="fas fa-mountain fa-3x"></i>
-          <!-- Mountain Icon -->
-          <h3>Break Through Plateaus</h3>
-          <p>
-            Establish strong foundational principles to break through any guitar
-            learning plateau and train like the pros.
-          </p>
-        </div>
-        <div class="feature">
-          <i class="fas fa-graduation-cap fa-3x"></i>
-          <!-- Graduation Cap Icon -->
-          <h3>Comprehensive Training</h3>
-          <p>
-            Covers essential modern guitar techniques and aural skills to
-            elevate your practice.
-          </p>
-        </div>
-      </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#" onclick="loadContent('home.html')">Home</a></li>
+        <li><a href="#" onclick="loadContent('about.html')">About</a></li>
+        <li>
+          <a href="#" onclick="loadContent('privacy.html')">Privacy Policy</a>
+        </li>
+        <li><a href="#" onclick="loadContent('download.html')">Download</a></li>
+      </ul>
+    </nav>
 
-      <div class="trial">
-        <h2>Try for Free - 7 Days</h2>
-        <p>Experience the full power of Guitar Dojo with a 7-day free trial.</p>
-        <a href="#" class="cta-button">Start Free Trial</a>
-      </div>
+    <!-- Main Content Container -->
+    <div class="container" id="content">
+      <!-- Content from different sections will be loaded here -->
     </div>
 
     <footer>
@@ -104,6 +70,22 @@
     <!-- Load ScrollTrigger plugin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
 
+    <!-- Load main script -->
     <script src="script.js"></script>
+
+    <!-- Dynamic Content Loading Script -->
+    <script>
+      function loadContent(page) {
+        fetch(page)
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("content").innerHTML = data;
+          })
+          .catch((error) => console.error("Error loading content:", error));
+      }
+
+      // Load the home page content by default
+      loadContent("home.html");
+    </script>
   </body>
 </html>
