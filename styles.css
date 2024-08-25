@@ -73,6 +73,24 @@ body {
   border-radius: 5px;
   display: inline-block;
 }
+.hero-content {
+  max-width: 50%;
+}
+.hero-video img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  padding-top: 8px;
+  height: 80vh;
+}
+.hero-video video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  height: 80vh;
+}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -97,17 +115,30 @@ body {
   .feature {
     margin-bottom: 20px; /* Add spacing between features */
   }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content,
+  .hero-video {
+    max-width: 100%;
+  }
 }
 
 .features {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: 50px 0;
+  gap: 20px; /* Space between feature items */
 }
 
 .feature {
   text-align: center;
-  max-width: 300px;
+  max-width: 200px; /* Adjust the max-width to control the size */
+  flex: 1 1 200px; /* Allows items to shrink and grow within constraints */
+  margin-bottom: 20px; /* Space below each feature */
 }
 
 .feature i {
@@ -123,6 +154,41 @@ body {
 .feature p {
   color: #d7a996;
   font-size: 1em;
+}
+
+.feature img {
+  width: 100%; /* Ensures the image scales with the container */
+  height: auto; /* Maintains the aspect ratio */
+  border-radius: 10px; /* Adds a slight border radius for aesthetics */
+}
+.feature video {
+  width: 100%; /* Ensures the image scales with the container */
+  height: auto; /* Maintains the aspect ratio */
+  border-radius: 10px; /* Adds a slight border radius for aesthetics */
+}
+
+.feature h3 {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #f0f0f0;
+}
+
+.feature p {
+  font-size: 1em;
+  color: #d7a996;
+  margin-top: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column; /* Stack features vertically on smaller screens */
+    align-items: center;
+  }
+
+  .feature {
+    max-width: 300px; /* Allow slightly larger images on smaller screens */
+  }
 }
 
 .trial {
