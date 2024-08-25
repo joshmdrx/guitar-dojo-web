@@ -34,7 +34,7 @@ gsap.matchMedia().add("(max-width: 768px)", () => {
     gsap.fromTo(
       step,
       {
-        z: -150,
+        z: -200,
         scale: 0.8,
         opacity: 0,
         yPercent: 20,
@@ -47,9 +47,9 @@ gsap.matchMedia().add("(max-width: 768px)", () => {
         ease: "linear",
         scrollTrigger: {
           trigger: step,
-          start: "top 85%", // Start the animation earlier
+          start: "top 110%", // Start the animation earlier
           end: "top 60%", // End the animation later
-          scrub: 1.5, // Create a smoother, slightly delayed transition
+          scrub: 2, // Create a smoother, slightly delayed transition
         },
       }
     );
