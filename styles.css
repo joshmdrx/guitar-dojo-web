@@ -18,6 +18,10 @@ body {
   padding: 20px;
   transform: translateZ(0px);
 }
+.container a {
+  color: #d57f76;
+  text-decoration: none;
+}
 
 @keyframes fadeIn {
   from {
@@ -433,6 +437,10 @@ footer a {
 .about-section i {
   color: #d57f76;
   margin-right: 10px;
+}
+.about-section a {
+  color: #d57f76;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
