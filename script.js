@@ -7,7 +7,7 @@ gsap.matchMedia().add("(min-width: 769px)", () => {
     gsap.fromTo(
       step,
       {
-        z: -300,
+        z: -40,
         scale: 0.7,
         opacity: 0,
         yPercent: 50,
