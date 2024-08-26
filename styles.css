@@ -449,3 +449,10 @@ footer a {
     padding-left: 15px;
   }
 }
+
+.cta-section p strong,
+.hero .cta p strong,
+.trial p strong {
+  font-size: 1.2em;
+  color: #d57f76; /* Use your primary color for emphasis */
+}
