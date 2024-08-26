@@ -17,7 +17,7 @@ gsap.matchMedia().add("(min-width: 769px)", () => {
         scale: 1,
         opacity: 1,
         yPercent: 0,
-        ease: "linear",
+        ease: "power2.inOut",
         scrollTrigger: {
           trigger: step,
           start: "top 80%",
@@ -34,7 +34,7 @@ gsap.matchMedia().add("(max-width: 768px)", () => {
     gsap.fromTo(
       step,
       {
-        z: -200,
+        z: -20,
         scale: 0.8,
         opacity: 0,
         yPercent: 20,
@@ -44,12 +44,12 @@ gsap.matchMedia().add("(max-width: 768px)", () => {
         scale: 1,
         opacity: 1,
         yPercent: 0,
-        ease: "linear",
+        ease: "power2.inOut",
         scrollTrigger: {
           trigger: step,
-          start: "top 110%", // Start the animation earlier
+          start: "top 90%", // Start the animation earlier
           end: "top 60%", // End the animation later
-          scrub: 2, // Create a smoother, slightly delayed transition
+          scrub: 1.5, // Create a smoother, slightly delayed transition
         },
       }
     );
