@@ -260,10 +260,10 @@ footer a {
     /* padding: 10px; Add some padding */
   }
 
-  #steps {
+  /* #steps {
     display: flex;
     flex-direction: column;
-  }
+  } */
 }
 
 #step1 {

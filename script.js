@@ -20,8 +20,8 @@ gsap.matchMedia().add("(min-width: 769px)", () => {
         ease: "power2.inOut",
         scrollTrigger: {
           trigger: step,
-          start: "top 80%",
-          end: "top 30%",
+          start: "top 120%",
+          end: "top 90%",
           scrub: true,
         },
       }
@@ -47,9 +47,9 @@ gsap.matchMedia().add("(max-width: 768px)", () => {
         ease: "power2.inOut",
         scrollTrigger: {
           trigger: step,
-          start: "top 90%", // Start the animation earlier
-          end: "top 60%", // End the animation later
-          scrub: 1.5, // Create a smoother, slightly delayed transition
+          start: "top 120%", // Start the animation earlier
+          end: "top 100%", // End the animation later
+          scrub: 1, // Create a smoother, slightly delayed transition
         },
       }
     );
