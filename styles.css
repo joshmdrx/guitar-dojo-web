@@ -251,6 +251,7 @@ footer a {
   color: white;
   transform: translateZ(-1px) scale(0.8); /* Start farther and scaled down */
   transition: transform 0.5s; /* Smooth transition for transform */
+  padding-bottom: 5%;
 }
 /* Responsive adjustments */
 @media (max-width: 768px) {
