@@ -256,7 +256,7 @@ footer a {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .step {
-    height: 50vh; /* Reduced height for mobile */
+    height: 20vh; /* Reduced height for mobile */
     font-size: 1.5em; /* Smaller font size for readability */
     /* padding: 10px; Add some padding */
   }
