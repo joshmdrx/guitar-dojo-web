@@ -47,9 +47,9 @@ gsap.matchMedia().add("(max-width: 768px)", () => {
         ease: "power2.inOut",
         scrollTrigger: {
           trigger: step,
-          start: "top 80%", // Start the animation earlier
-          end: "top 90%", // End the animation later
-          scrub: 1, // Create a smoother, slightly delayed transition
+          start: "top 120%",
+          end: "top 90%",
+          scrub: true,
         },
       }
     );
